@@ -1,0 +1,197 @@
+name: 🚀 SIH Project Submission
+description: Submit your SIH 2026 project details
+title: "SIH Submission: [Team Name]"
+labels: ["sih-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 SIH 2026 Project Submission Form
+        Welcome! Please fill in all the details below to submit your SIH project.
+        
+        **Important:** All fields marked with * are required.
+
+  - type: text
+    id: team_name
+    attributes:
+      label: Team Name *
+      description: Enter your team name
+      placeholder: "e.g., InnovateTech Solutions"
+    validations:
+      required: true
+
+  - type: text
+    id: team_leader
+    attributes:
+      label: Team Leader *
+      description: Full name of the team leader
+      placeholder: "e.g., John Doe"
+    validations:
+      required: true
+
+  - type: text
+    id: contact_number
+    attributes:
+      label: Contact Number *
+      description: Mobile number of team leader
+      placeholder: "e.g., +91-XXXXXXXXXX"
+    validations:
+      required: true
+
+  - type: textarea
+    id: team_members
+    attributes:
+      label: Team Members *
+      description: List all team members with their roll numbers
+      placeholder: |
+        1. Name - Roll Number
+        2. Name - Roll Number
+        3. Name - Roll Number
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: text
+    id: ps_id
+    attributes:
+      label: Problem Statement ID (PS ID) *
+      description: The official PS ID provided by SIH
+      placeholder: "e.g., SIH2026001"
+    validations:
+      required: true
+
+  - type: text
+    id: ps_title
+    attributes:
+      label: Problem Statement Title *
+      description: Title of the problem statement you selected
+      placeholder: "e.g., AI-based Healthcare Monitoring System"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme *
+      description: Select the theme of your problem statement
+      options:
+        - "Select a theme"
+        - "Agriculture & Water Resources"
+        - "Energy & Environment"
+        - "Healthcare & Wellness"
+        - "Smart Cities & Urban Planning"
+        - "Education"
+        - "Finance & Banking"
+        - "Transportation & Logistics"
+        - "Government Services"
+        - "Disaster Management"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category *
+      description: Is your solution Software or Hardware based?
+      options:
+        - "Select a category"
+        - "Software"
+        - "Hardware"
+        - "IoT (Hardware + Software)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: Project Description *
+      description: Provide a comprehensive description of your project, how it solves the problem, and its key features
+      placeholder: "Describe your project in detail..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tech_stack
+    attributes:
+      label: Technology Stack *
+      description: List all technologies, frameworks, and tools used
+      placeholder: |
+        - Backend: Python, Django, PostgreSQL
+        - Frontend: React, Tailwind CSS
+        - Cloud: AWS, Docker
+        - Other: Git, etc.
+    validations:
+      required: true
+
+  - type: text
+    id: github_repo
+    attributes:
+      label: GitHub Repository Link *
+      description: Link to your project's GitHub repository
+      placeholder: "https://github.com/username/project-name"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ppt_upload
+    attributes:
+      label: PPT / Presentation *
+      description: |
+        Upload your presentation file or provide a link.
+        
+        **Options:**
+        1. **Drag & Drop:** You can drag and drop your PPT file directly below
+        2. **Large File?** If your file is too large (>25MB), upload it to Google Drive or OneDrive and provide the accessible link below
+        3. **Link:** Provide the shareable link to your presentation
+        
+        Example: https://drive.google.com/file/d/1ABC123/view
+      placeholder: "Upload PPT or provide Google Drive/OneDrive link"
+    validations:
+      required: true
+
+  - type: text
+    id: demo_video
+    attributes:
+      label: Demo Video Link *
+      description: Provide a link to your project demo video (YouTube, Vimeo, or Google Drive)
+      placeholder: "https://www.youtube.com/watch?v=... or https://drive.google.com/..."
+    validations:
+      required: true
+
+  - type: text
+    id: college
+    attributes:
+      label: College / Institute *
+      description: Name of your college or institute
+      placeholder: "e.g., Netaji Subhas University of Technology, Delhi"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Declaration
+
+  - type: checkboxes
+    id: declaration
+    attributes:
+      label: Declaration *
+      description: Please confirm that your submission meets all SIH guidelines
+      options:
+        - label: "I confirm that the information provided above is accurate and our project follows all SIH 2026 guidelines and rules."
+          required: true
+        - label: "I have ensured that all team members are eligible to participate in SIH 2026."
+          required: true
+        - label: "I understand that plagiarism or misrepresentation will lead to disqualification."
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thank you for submitting your SIH 2026 project! Our team will review your submission shortly. Good luck! 🎉
