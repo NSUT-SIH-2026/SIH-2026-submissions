@@ -1,6 +1,5 @@
 name: 🚀 SIH Project Submission
 description: Submit your SIH 2026 project details
-title: "SIH Submission: [Team Name]"
 labels: ["sih-submission"]
 body:
   - type: markdown
@@ -47,10 +46,6 @@ body:
         1. Name - Roll Number
         2. Name - Roll Number
         3. Name - Roll Number
-      value: |
-        1. 
-        2. 
-        3. 
     validations:
       required: true
 
